@@ -1,0 +1,77 @@
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Reddit Mono", monospace;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: grid;
+  background-color: yellow;
+  grid-template-areas:
+    "logo nav"
+    "searchbar searchbar"
+    "city city";
+  padding: 1rem;
+
+  .logo {
+    grid-area: logo;
+  }
+
+  nav {
+    grid-area: nav;
+    justify-self: end;
+  }
+
+  .searchbar {
+    grid-area: searchbar;
+    margin: 1rem 0;
+    textarea {
+      border-radius: 0.5rem;
+      &[placeholder] {
+        text-align: center;
+      }
+    }
+  }
+
+  .city {
+    grid-area: city;
+    background-color: white;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+}
+
+main{
+    .today{
+      .now{
+        display:grid;
+        grid-template-areas: 
+        "where . . date"
+        "h3 h3 h3 h3"
+        "celsius celsius picture picture"
+        "celsius celsius picture picture";
+
+        .where{
+            grid-area: where;
+        }
+        .date{
+            grid-area: date;
+        }
+        h3{
+            grid-area: h3;
+        }
+        .celsius{
+            grid-area:celsius;
+        }
+        .picture{
+            grid-area: picture;
+        }
+      }  
+    }
+}

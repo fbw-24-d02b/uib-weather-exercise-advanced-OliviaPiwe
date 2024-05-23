@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6f53552399.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wetter-Aktuell</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section class="logo">
+        <i class="fa-solid fa-umbrella-beach" style="color: #ffffff;"></i>
+        Wetter-Aktuell
+      </section>
+      <nav><i class="fa-solid fa-bars" style="color: #ffffff;"></i></nav>
+      <div class="searchbar">
+        <form action="input">
+            <textarea name="searchbar" id="searchbar" rows="" cols="42" placeholder="Suche nach Ort oder PLZ..."></textarea>
+        </form>
+      </div>
+      <div class="city">
+        Berlin <i class="fa-solid fa-cloud-sun" style="color: #FFD43B;"></i> 23°
+      </div>
+    </header>
+    <main>
+        <section class="today">
+            <div class="now">
+                <p class="where">Berlin</p>
+                <p class="date">Do, 23.05.24 | 17.45 Uhr</p>
+                <h3>Wetter in Berlin</h3>
+                <p class="celsius">23°</p>
+                <p class="picture">
+                    <i class="fa-regular fa-sun" style="color: #FFD43B;"></i>
+                </p> 
+            </div>
+            <div class="later"></div>
+        </section>
+        <section class="next-days">
+            <div class="day-one"></div>
+            <div class="day-two"></div>
+            <div class="day-three"></div>
+            <div class="day-four"></div>
+            <div class="day-five"></div>
+            <div class="day-six"></div>
+            <div class="day-seven"></div>
+        </section>
+        <section class="weather-action">
+
+        </section>
+    </main>
+  </body>
+</html>
