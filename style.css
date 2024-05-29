@@ -7,11 +7,15 @@
 
 body {
   margin: 0;
+  background-color: burlywood;
 }
 
 header {
   display: grid;
-  background-color: yellow;
+  background-image: url(/pics/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-template-areas:
     "logo nav"
     "searchbar searchbar"
@@ -47,31 +51,78 @@ header {
   }
 }
 
-main{
-    .today{
-      .now{
-        display:grid;
-        grid-template-areas: 
+main {
+  margin-top: 1rem;
+  .today {
+    .now {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
         "where . . date"
         "h3 h3 h3 h3"
         "celsius celsius picture picture"
         "celsius celsius picture picture";
+      border: 1px solid gray;
+      border-radius: 0.5rem;
+      background-image: url(/pics/now.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
 
-        .where{
-            grid-area: where;
+      .where {
+        grid-area: where;
+      }
+      .date {
+        grid-area: date;
+      }
+      h3 {
+        grid-area: h3;
+      }
+      .celsius {
+        grid-area: celsius;
+        font-size: 3rem;
+        justify-self: center;
+      }
+      .picture {
+        grid-area: picture;
+        justify-self: center;
+        i {
+          font-size: 5rem;
         }
-        .date{
-            grid-area: date;
-        }
-        h3{
-            grid-area: h3;
-        }
-        .celsius{
-            grid-area:celsius;
-        }
-        .picture{
-            grid-area: picture;
-        }
-      }  
+      }
     }
+    .later {
+      margin-top: 1rem;
+      overflow-x: scroll;
+      white-space: nowrap;
+
+      div {
+        width: 5rem;
+        display: inline-block;
+        margin-bottom: 1rem;
+        border: 1px solid gray;
+        border-radius: 0.5rem;
+        padding: 0.2rem;
+      }
+    }
+  }
+  .next-days {
+    margin-top: 1rem;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+    h2{
+      text-align: center;
+      text-decoration:underline
+    }
+
+    div{
+      width: 5rem;
+        display: inline-block;
+        margin-bottom: 1rem;
+        border: 1px solid gray;
+        border-radius: 0.5rem;
+        padding: 0.2rem;
+    }
+  }
 }
