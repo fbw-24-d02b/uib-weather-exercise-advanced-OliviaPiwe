@@ -71,21 +71,46 @@ main {
 
       .where {
         grid-area: where;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
       }
       .date {
         grid-area: date;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
       }
       h3 {
         grid-area: h3;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
       }
       .celsius {
         grid-area: celsius;
         font-size: 3rem;
         justify-self: center;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
       }
       .picture {
         grid-area: picture;
         justify-self: center;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
         i {
           font-size: 5rem;
         }
@@ -111,18 +136,24 @@ main {
     overflow-x: scroll;
     white-space: nowrap;
 
-    h2{
+    h2 {
       text-align: center;
-      text-decoration:underline
+      text-decoration: underline;
     }
 
-    div{
+    div {
       width: 5rem;
-        display: inline-block;
-        margin-bottom: 1rem;
-        border: 1px solid gray;
-        border-radius: 0.5rem;
-        padding: 0.2rem;
+      display: inline-block;
+      margin-bottom: 1rem;
+      border: 1px solid gray;
+      border-radius: 0.5rem;
+      padding: 0.2rem;
     }
+  }
+
+  .weather-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
   }
 }
