@@ -130,7 +130,6 @@ main {
       }
     }
     .later {
-      margin-top: 1rem;
       overflow-x: scroll;
       white-space: nowrap;
 
