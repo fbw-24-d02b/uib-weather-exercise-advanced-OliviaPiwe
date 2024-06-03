@@ -79,6 +79,9 @@ main {
         backdrop-filter: blur(4px);
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.18);
+        display:flex;
+        align-items: center;
+        justify-content: center;
       }
       .date {
         grid-area: date;
@@ -95,6 +98,8 @@ main {
         backdrop-filter: blur(4px);
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        justify-content: center;
       }
       .celsius {
         grid-area: celsius;
@@ -114,6 +119,7 @@ main {
         backdrop-filter: blur(4px);
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.18);
+        height:5rem;
         i {
           font-size: 5rem;
         }
@@ -125,12 +131,17 @@ main {
       white-space: nowrap;
 
       div {
-        width: 5rem;
+        width:  5rem;
         display: inline-block;
         margin-bottom: 1rem;
         border: 1px solid gray;
         border-radius: 0.5rem;
         padding: 0.2rem;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
       }
     }
   }
@@ -141,16 +152,22 @@ main {
 
     h2 {
       text-align: center;
-      text-decoration: underline;
+      position:sticky;
+      left:2rem;
     }
 
     div {
-      width: 5rem;
+      width: 7rem;
       display: inline-block;
       margin-bottom: 1rem;
       border: 1px solid gray;
       border-radius: 0.5rem;
       padding: 0.2rem;
+      background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
     }
   }
 
