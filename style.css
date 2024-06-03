@@ -59,7 +59,7 @@ header {
 }
 
 main {
-  margin-top: 1rem;
+  margin-top: .5rem;
   .today {
     .now {
       display: grid;
@@ -69,7 +69,7 @@ main {
         "h3 h3 h3 h3"
         "celsius celsius picture picture"
         "celsius celsius picture picture";
-      border: 1px solid gray;
+      border: 4px solid gray;
       border-radius: 0.5rem;
       background-image: url(/pics/now.jpg);
       background-repeat: no-repeat;
@@ -132,7 +132,7 @@ main {
     .later {
       overflow-x: scroll;
       white-space: nowrap;
-
+      scrollbar-width: thin;
       div {
         width:  5rem;
         display: inline-block;
@@ -152,6 +152,7 @@ main {
     margin-top: 1rem;
     overflow-x: scroll;
     white-space: nowrap;
+    scrollbar-width: thin;
 
     h2 {
       text-align: center;
