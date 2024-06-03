@@ -11,6 +11,9 @@ body {
 }
 
 header {
+  position:sticky;
+  Top:0;
+  z-index:1;
   display: grid;
   background-image: url(/pics/header.jpg);
   background-size: cover;
