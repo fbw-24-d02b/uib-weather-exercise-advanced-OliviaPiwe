@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Reddit Mono", monospace;
+  color:#272727;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; */
-  /* background-color: lightgrey; */
+  background-color: #009FB7;
 }
 
 header {
@@ -19,10 +20,11 @@ header {
   Top:0;
   z-index:1;
   display: grid;
-  background-image: url(/pics/header.jpg);
+  /* background-image: url(/pics/header.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background-color:#FED766 ;
   grid-template-areas:
     "logo nav"
     "searchbar searchbar"
@@ -71,10 +73,11 @@ main {
         "celsius celsius picture picture";
       border: 4px solid gray;
       border-radius: 0.5rem;
-      background-image: url(/pics/now.jpg);
+      /* background-image: url(/pics/now.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
+      background-position: center; */
+      background-color: #696773;
 
       .where {
         grid-area: where;
@@ -179,5 +182,23 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+  }
+}
+
+footer{
+  .blogs{
+    display:grid;
+    justify-content: center;
+
+    .icons{
+      display:flex;
+      justify-content: center;
+      gap:2rem;
+      
+      i{
+        font-size: 2rem;
+        color: #696773;
+      }
+    }
   }
 }
