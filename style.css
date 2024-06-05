@@ -20,10 +20,6 @@ header {
   top: 0;
   z-index: 1;
   display: grid;
-  /* background-image: url(/pics/header.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
   background-color: #fed766;
   grid-template-areas:
     "logo nav"
@@ -31,12 +27,16 @@ header {
     "city city";
   padding: 1rem;
 
+  .nav-2 {
+    grid-area: nav-2;
+    display: none;
+  }
   .logo {
     grid-area: logo;
-    display:flex;
+    display: flex;
     align-items: center;
-    img{
-      width:2rem;
+    img {
+      width: 2rem;
     }
   }
 
@@ -65,13 +65,13 @@ header {
     padding: 0.5rem;
     text-align: center;
     border-radius: 0.5rem;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
 
-    img{
-      width:2rem;
+    img {
+      width: 2rem;
     }
   }
 }
@@ -160,8 +160,8 @@ main {
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.18);
 
-        img{
-          width:2rem;
+        img {
+          width: 2rem;
         }
       }
     }
@@ -190,10 +190,9 @@ main {
       backdrop-filter: blur(4px);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
-      
 
-      img{
-        width:2rem;
+      img {
+        width: 2rem;
       }
     }
   }
@@ -232,6 +231,11 @@ footer {
     align-items: center;
     gap: 1rem;
 
+    .contact-links {
+      display: flex;
+      gap: 1rem;
+    }
+
     a {
       text-decoration: none;
       color: #696773;
@@ -239,6 +243,71 @@ footer {
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  header {
+    nav {
+      display: none;
+    }
+
+    .nav-2 {
+      display: flex;
+      justify-content: space-between;
+
+      .nav-2-links {
+        display: flex;
+        gap: 5rem;
+      }
+
+      .nav-2-login {
+        display: flex;
+        justify-content: end;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #272727;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    grid-template-areas:
+      "logo searchbar searchbar city"
+      "nav-2 nav-2 nav-2 login";
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "today today weather-action weather-action"
+      "today today weather-action weather-action"
+      "next-days next-days next-days next-days";
+  }
+
+  .today {
+    grid-area: today;
+    margin-left:2rem;
+  }
+
+  .next-days {
+    grid-area: next-days;
+    justify-self: center;
+  }
+
+  .weather-action {
+    grid-area: weather-action;
+  }
+
+  footer {
+    .contact .contact-links {
+      gap: 7rem;
     }
   }
 }
