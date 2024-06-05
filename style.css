@@ -33,6 +33,11 @@ header {
 
   .logo {
     grid-area: logo;
+    display:flex;
+    align-items: center;
+    img{
+      width:2rem;
+    }
   }
 
   nav {
