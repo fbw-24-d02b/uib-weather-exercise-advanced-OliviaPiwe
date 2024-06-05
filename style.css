@@ -220,6 +220,10 @@ footer {
         font-size: 2rem;
         color: #696773;
         margin-bottom: 3rem;
+
+        &:hover{
+          color:#009fb7;
+        }
       }
     }
   }
@@ -283,6 +287,7 @@ footer {
   }
 
   main {
+    margin-top:3rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
@@ -299,10 +304,12 @@ footer {
   .next-days {
     grid-area: next-days;
     justify-self: center;
-  }
+    }
 
   .weather-action {
     grid-area: weather-action;
+    display:flex;
+    align-self:center;
   }
 
   footer {
